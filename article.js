@@ -4,4 +4,4 @@ let quantity = 5
 
 let total = price*quantity
 
-console.log("TOTAL PRICE", total)
+console.log("TOTAL PRICE : ", total)
