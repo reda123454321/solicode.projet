@@ -8,3 +8,4 @@ let total = price*quantite
 console.log("ORDER NAME :" , order_name)
 console.log("PRICE : " , price)
 console.log("QUANTITE : " , quantite)
+//node gere_unarticle.js
