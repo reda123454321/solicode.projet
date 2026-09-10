@@ -3,7 +3,8 @@ let y=30
 console.log("avant ", x,y);
 
 
-let temp = x 
+let temp 
+x = temp
 x = y
 y = temp
 
