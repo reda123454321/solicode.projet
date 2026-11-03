@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(90deg, pink, purple);
+    border-radius: 30px; 
+    color: pink;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.nav a{
+
+    color: white;
+    margin: 5px;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header h1,p{
+    color: black;
+    text-align: center;
+}
+.header h2{
+    color: black;
+    text-align: center;
+}
+.product{
+    width: 25%;
+    background-color: white;
+    border: 4px double transparent;
+    background: (90deg, pink, purple) border-box;
+    border-radius: 15px;
+    color: black;
+    height: 490px;
+    text-align: center;
+    transition: 1s ease;
+}
+.product img{
+    width: 95%;
+    height: 300px;
+    border-radius: 20px;
+
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 10px;
+}
+.product a{
+    border: 2px solid transparent;
+    background: linear-gradient(purple, pink)padding-box,
+    linear-gradient(90deg, gray, pink)border-box;
+    padding: 5px 5px;
+    border-radius: 15px;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+.product h3{
+    color: pink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+    gap: 0 20px;
+    padding: 15px;
+    justify-content: center;
+    background: linear-gradient(90deg, pink, purple);
+}
+.product:hover{
+    transform: scale(1.01) translateY(-5px);
+    filter: drop-shadow(0 0 15px purple) saturate(1.2);
+    border-radius: 30px;
+
+}
