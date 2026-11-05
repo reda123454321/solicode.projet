@@ -1,0 +1,175 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    
+    
+    
+}
+.search nav{
+    margin-left: 20%;
+    width: 20%;
+}
+.search input{
+    width: 40%;
+    padding: 7px;
+    height: 32px;
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+body{
+    background-image: url("../Réalisation/images/background.jpg");
+}
+.search nav a{
+    color: gold;
+    margin: 5px;
+}
+.search img{
+    width: 15%;
+    margin: 0;
+}
+.header h1{
+    color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    text-shadow: 0 0 20px lightslategray;
+    position: absolute;
+    margin: 0;
+    margin-left: 5px;
+}
+.header cite{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 15px white;
+}
+.card{
+    width: 25%;
+    border: 3px solid transparent;
+    background: linear-gradient(90deg, white) padding-box,
+    linear-gradient(90deg, gold, yellow, goldenrod) border-box;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    height: 580px;
+}
+.card img{
+    width: 98%;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px lightslategray);
+    height: 320px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    justify-content: center;
+}
+.card h3{
+    color: gold;
+}
+.shopnow{
+    border: 2px solid transparent;
+    padding: 5px;
+    margin: 10px;
+    background: gold padding-box,
+    linear-gradient(90deg, black, gold, goldenrod)border-box;
+    background-color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: gold;
+    
+}
+.shopnow:focus{
+    transform: scale(1.03) ;
+}
+.card a{
+    margin-top: 20px;
+}
+.red{
+    transition: 0.5s ease;
+    color: red;
+}
+.red:hover{
+    background-color: red;
+    transform: scale(1.03) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+.red:focus{
+    background-color: red;
+    transform: scale(1.10) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+
+.black{
+    transition: 0.5s ease;
+    color: black;
+}
+.black:hover{
+    background-color: black;
+    transform: scale(1.03) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+.black:focus{
+    background-color: black;
+    transform: scale(1.10) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+
+.blue{
+    transition: 0.5s ease;
+    color: blue;
+}
+.blue:hover{
+    background-color: blue;
+    transform: scale(1.03) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+.blue:focus{
+    background-color: blue;
+    transform: scale(1.10) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+
+.gray{
+    transition: 0.5s ease;
+    color: gray;
+}
+.gray:hover{
+    background-color: gray;
+    transform: scale(1.03) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+.gray:focus{
+    background-color: gray;
+    transform: scale(1.10) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+
+.purple{
+    transition: 0.5s ease;
+    color: purple;
+}
+.purple:hover{
+    background-color: purple;
+    transform: scale(1.03) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
+.purple:focus{
+    background-color: purple;
+    transform: scale(1.10) translateY(-7px);
+    color: white;
+    border-radius: 9px;
+}
