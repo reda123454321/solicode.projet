@@ -1,8 +1,23 @@
-## TABLEAU DE CARDINNALITé :
+# Construire le MCD complet – Blog :
 
-| **Entité A** | **Cardinalité A** | **Verbe metier** | **Cardinalité B** | **Entité B** | **Régles de gestion** |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-|**Ville**|(N,0)|Habite|(1,1)|Auteur|Une ville peut accueillir zéro, un ou plusieurs auteurs. Un auteur habite dans une et une seule ville.|
-|**Auteur**|(N,0)|Rédige|(1,1)|Article|Un auteur peut rédiger zéro, un ou plusieurs articles. Un article est rédigé par un et un seul auteur.|
-|**Catégorie**|(N,0)|Regroupe|(1,1)|Article|Un auteur peut rédiger zéro, un ou plusieurs articles. Un article est rédigé par un et un seul auteur.
-|**Article**|(N,0)|Posséde|(N,0)|Tag|Un article peut posséder zéro, un ou plusieurs tags. Un tag peut être associé à zéro, un ou plusieurs article
+### VILLE :     
+* **id_ville**     
+* nom_ville     
+                
+### AUTEUR :    |━━━━━ HABITE `Ville(0,N) Auteur(1,1)`
+* **id_auteur**        
+* nom_auteur    
+* prenom_auteur 
+* email_auteur  
+   
+### ARTICLE :    |━━━━━ REDIGE `Auteur(0,N) Article(1,1)`
+* **id_article**
+* titre_article
+* contenu_article
+* date_publication
+* statut_article
+* image_article
+                 
+### CATEGORIE :  |━━━━━ REGROUPE `Article(1,1) Categorie(0,N)`
+* **id_categorie**
+* nom_categorie
