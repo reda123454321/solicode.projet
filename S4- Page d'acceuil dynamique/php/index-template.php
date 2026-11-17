@@ -15,7 +15,7 @@
         <h3>Explorer par thème</h3>
         <a href="">Tous les articles</a><br><hr>
         <?php foreach($categories as $category): ?>
-            <a href="index.php?youssef=<?= $category["id"] ?>"><?= htmlspecialchars($category["libelle"]) ?></a><br>
+            <a href="index.php?id=<?= $category["id"] ?>"><?= htmlspecialchars($category["libelle"]) ?></a><br>
              <?php endforeach ?>
     </section>
    
