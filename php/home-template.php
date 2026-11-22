@@ -71,8 +71,9 @@
                 Temporibus necessitatibus ab dolor placeat perferendis hic tenetur amet unde nisi nemo? Expedita corrupti et eligendi magni cupiditate vero nesciunt fugiat voluptate possimus accusantium natus impedit excepturi, eum dignissimos! Molestiae.</p>
             </article>
         </section>
-
-        <h2><strong>Articles :</strong></h2>
+        <div class="article">
+           <h2><strong>Articles :</strong></h2>
+        </div>
         <section class="articles">
             <?php foreach($articles as $article): ?>
                 <div class="cards">

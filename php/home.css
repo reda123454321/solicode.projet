@@ -6,6 +6,7 @@
     align-items: center;
     background-color: beige;
     padding: 15px;
+    animation: move 1s alternate linear;
 }
 
 .subtitle h1{
@@ -28,6 +29,7 @@
     background-color: beige;
     padding: 15px;
     margin: 5px 0 5px 0;
+    animation: move 1s alternate linear;
 }
 
 .me h2{
@@ -42,6 +44,8 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    animation: move 1s alternate linear;
+    padding: 35px;
 }
 .cards{
     border: 3px solid darkgray;
@@ -51,18 +55,51 @@
     height: 730px;
     width: 25%;
     border-radius: 15px;
+    animation: move 1s alternate linear;
+    transition: 1s ease;
+}
+@keyframes move{
+    from{
+        transform: translateY(6px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.cards:hover{
+    transform: scale(1.03) translateY(-3px);
+    border-radius: 20px;
+    box-shadow: 0 0 15px lightslategray;
 }
 
 .cards img{
     width: 100%;
     height: 40%;
     border-radius: 15px;
-
 }
+
 .cards span{
-    margin-bottom: 90px;
     padding: 8px;
     border-radius: 15px;
     border: 1px solid gray;
     width: 5%;
+}
+
+.article h2{
+    color: lightblue;
+    text-decoration: underline;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards a{
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    border: 3px solid black;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 7px;
+    text-align: end;
 }
