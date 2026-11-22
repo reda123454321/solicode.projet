@@ -1,0 +1,68 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    padding: 15px;
+}
+
+.subtitle h1{
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    font-size: 30px;
+}
+
+.subtitle cite{
+    color: darkgray;
+}
+
+.nav a{
+    margin: 2px;
+    color: lightblue;
+}
+
+.me{
+    background-color: beige;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+}
+
+.me h2{
+    color: lightblue;
+    text-decoration: underline;
+    text-align: center;
+}
+.articles{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cards{
+    border: 3px solid darkgray;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    height: 730px;
+    width: 25%;
+    border-radius: 15px;
+}
+
+.cards img{
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+
+}
+.cards span{
+    margin-bottom: 90px;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    width: 5%;
+}
