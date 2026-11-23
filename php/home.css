@@ -37,26 +37,51 @@
     text-decoration: underline;
     text-align: center;
 }
+
 .articles{
-    background-color: beige;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px 20px;
     animation: move 1s alternate linear;
     padding: 35px;
 }
+
 .cards{
     border: 3px solid darkgray;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(20px);
+    background-color: beige;
     padding: 15px;
-    height: 730px;
+    height: 520px;
     width: 25%;
     border-radius: 15px;
     animation: move 1s alternate linear;
     transition: 1s ease;
+    position: relative;
+}
+
+.cards::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, white, blue, beige, white);
+    background-size: 300%;
+    z-index: -1;
+    inset: -5px;
+    width: auto;
+    height: auto;
+    filter: blur(12px);
+    border-radius: inherit;
+    animation: move2 5s linear alternate infinite;
+
+}
+
+@keyframes move2{
+    from{
+        background-position: 0 50%;
+    }
+    to{
+        background-position: 300% 50%;
+    }
 }
 @keyframes move{
     from{
@@ -65,12 +90,6 @@
     to{
         transform: translateX(0);
     }
-}
-
-.cards:hover{
-    transform: scale(1.03) translateY(-3px);
-    border-radius: 20px;
-    box-shadow: 0 0 15px lightslategray;
 }
 
 .cards img{

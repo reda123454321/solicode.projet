@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reda's prototype</title>
     <link rel="stylesheet" href="home.css">
-    
-    <link rel="icon" href="">
 </head>
+
+
 <body>
     <header class="header">
         <div class="subtitle">
@@ -83,8 +83,7 @@
                     <cite>By :<?= htmlspecialchars($article["author"]); ?></cite>
                     <p><?= htmlspecialchars($article["content"]); ?></p>
                     <!-- <a href="home.php?id_article=<?= urlencode($article['id']) ?>&id_category=<?= urlencode($article['id']) ?>">SEE MORE</a><br> -->
-                    <span class="situation"><?= htmlspecialchars($article["situation"]); ?></span>
-                    
+                    <span class="situation"><?= htmlspecialchars($article["situation"]); ?></span> 
                 </div>
             <?php endforeach ?>
         </section>

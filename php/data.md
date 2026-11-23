@@ -113,7 +113,7 @@
 * article 11 :
         "id" => 11,
         "author" => "Anas",
-        "title" => "Understanding Cybersecurity",
+        "title" => "Cybersecurity",
         "description" => "Learn about digital security and online threats.",
         "content" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, officia et consequatur ipsa aliquid excepturi quae dolorum illo voluptas nihil accusantium officiis modi sunt inventore blanditiis perferendis, itaque rerum alias.",
         "categorie" => "Computer Science",
