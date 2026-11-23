@@ -77,13 +77,13 @@
         <section class="articles">
             <?php foreach($articles as $article): ?>
                 <div class="cards">
-                    <img src="<?= htmlspecialchars($article["img"]) ?>" alt="article">
-                    <h2><?= htmlspecialchars($article["title"]) ?></h2>
-                    <h3><?= htmlspecialchars($article["categorie"]) ?></h3>
-                    <cite>By :<?= htmlspecialchars($article["author"]) ?></cite>
-                    <p><?= htmlspecialchars($article["content"]) ?></p>
+                    <img src="<?= htmlspecialchars($article["img"]); ?>" alt="article">
+                    <h2><?= htmlspecialchars($article["title"]); ?></h2>
+                    <h3><?= htmlspecialchars($article["categorie"]); ?></h3>
+                    <cite>By :<?= htmlspecialchars($article["author"]); ?></cite>
+                    <p><?= htmlspecialchars($article["content"]); ?></p>
                     <!-- <a href="home.php?id_article=<?= urlencode($article['id']) ?>&id_category=<?= urlencode($article['id']) ?>">SEE MORE</a><br> -->
-                    <span class="situation"><?= htmlspecialchars($article["situation"]) ?></span>
+                    <span class="situation"><?= htmlspecialchars($article["situation"]); ?></span>
                     
                 </div>
             <?php endforeach ?>

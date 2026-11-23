@@ -103,3 +103,20 @@
     padding: 7px;
     text-align: end;
 }
+
+.footer{
+    background-color: black;
+    padding: 15px;
+    color: beige;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: move 1s alternate linear ;
+    margin: 3px;
+}
+
+.contact a{
+    color: white;
+    margin: 5px;
+}
