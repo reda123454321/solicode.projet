@@ -139,6 +139,3 @@ $articles = [
 require("home-template.php")
 
 ?>
-
-
-?>
