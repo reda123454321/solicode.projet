@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* SEARCH */
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #b89545;
+    gap: 20px;
+}
+
+.search img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.search input {
+    width: 35%;
+    padding: 12px;
+    background-color: #292929;
+    border: 1px solid #b89545;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a{
+    color: white;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #111, #292929, #111);
+    border-bottom: 1px solid #b89545;
+}
+
+.header h1 {
+    color: #d6b45b;
+    font-size: 55px;
+    letter-spacing: 8px;
+}
+
+.header cite {
+    display: block;
+    margin-top: 15px;
+    color: #aaa;
+    letter-spacing: 3px;
+}
+
+/* MAIN */
+
+.main {
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* CARDS */
+
+.card {
+    width: 270px;
+    padding: 20px;
+    background-color: #202020;
+    border: 1px solid #444;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #d6b45b;
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    color: #d6b45b;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card p {
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.card button {
+    cursor: pointer;
+    border: none;
+    padding: 7px 9px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    border: 1px solid white !important;
+}
+
+.gray {
+    background-color: gray;
+    color: white;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
+}
+
+/* QUANTITY */
+
+.card label {
+    display: block;
+    margin-top: 18px;
+    color: #d6b45b;
+}
+
+.buttonplus,
+.buttonmoins {
+    width: 35px;
+    font-size: 18px;
+    background-color: #d6b45b;
+    color: black;
+    font-weight: bold;
+}
+
+.message {
+    min-height: 20px;
+    font-size: 13px;
+}
+
+/* LINKS */
+
+.card a {
+    display: inline-block;
+    color: #d6b45b;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    color: white;
+}
+
+.shopnow {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #d6b45b;
+    color: black !important;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.shopnow:hover {
+    background-color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .search {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+
+    .header cite {
+        font-size: 11px;
+    }
+
+    .main {
+        width: 95%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+};
+
+.search button{
+    padding: 8px;
+    color: gold;
+    background: none;
+}

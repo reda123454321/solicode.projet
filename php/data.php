@@ -1,6 +1,6 @@
- <?php
+<?php
 
-$articles = [
+$articles=[
     [
         "id" => 1,
         "author" => "Ahmed",
@@ -12,6 +12,7 @@ $articles = [
         "situation" => "Approved",
         "img" => "prototype/football.jpeg",
     ],
+
     [
         "id" => 2,
         "author" => "Youssef",
@@ -23,6 +24,7 @@ $articles = [
         "situation" => "Pending",
         "img" => "prototype/basketball.jpeg",
     ],
+
     [
         "id" => 3,
         "author" => "Sara",
@@ -34,6 +36,7 @@ $articles = [
         "situation" => "In Progress",
         "img" => "prototype/painting.jpeg",
     ],
+
     [
         "id" => 4,
         "author" => "Omar",
@@ -45,6 +48,7 @@ $articles = [
         "situation" => "Approved",
         "img" => "prototype/graphic design2.jpeg",
     ],
+
     [
         "id" => 5,
         "author" => "Hamza",
@@ -56,6 +60,7 @@ $articles = [
         "situation" => "Pending",
         "img" => "prototype/php.jpeg",
     ],
+
     [
         "id" => 6,
         "author" => "Salma",
@@ -67,6 +72,7 @@ $articles = [
         "situation" => "Approved",
         "img" => "prototype/ai.jpeg",
     ],
+
     [
         "id" => 7,
         "author" => "Mehdi",
@@ -78,6 +84,7 @@ $articles = [
         "situation" => "In Progress",
         "img" => "prototype/gaming.jpeg",
     ],
+
     [
         "id" => 8,
         "author" => "Imane",
@@ -89,6 +96,7 @@ $articles = [
         "situation" => "Rejected",
         "img" => "prototype/gaming2.jpeg",
     ],
+
     [
         "id" => 9,
         "author" => "Khalid",
@@ -100,6 +108,7 @@ $articles = [
         "situation" => "Approved",
         "img" => "prototype/physical sport.jpeg",
     ],
+
     [
         "id" => 10,
         "author" => "Aya",
@@ -111,17 +120,19 @@ $articles = [
         "situation" => "Pending",
         "img" => "prototype/photographie.jpeg",
     ],
+
     [
         "id" => 11,
         "author" => "Anas",
         "title" => "Cybersecurity",
         "description" => "Learn about digital security and online threats.",
-        "content" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, officia et consequatur ipsa aliquid excepturi quae dolorum illo voluptas nihil accusantium officiis modi sunt inventore blanditiis perferendis, itaque rerum lorem.",
+        "content" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, officia et consequatur ipsa aliquid excepturi quae dolorum illo voluptas nihil accusantium officiis modi sunt inventore blanditiis perferendis, itaque rerum alias.",
         "categorie" => "Computer Science",
         "categorie_id" => 3,
         "situation" => "In Progress",
         "img" => "prototype/cyber securrite.jpeg",
     ],
+
     [
         "id" => 12,
         "author" => "Nour",
@@ -133,9 +144,6 @@ $articles = [
         "situation" => "Approved",
         "img" => "prototype/minecraft.jpeg",
     ],
-        
 ];
-
-require("home-template.php")
 
 ?>

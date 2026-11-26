@@ -75,7 +75,9 @@
            <h2><strong>Articles :</strong></h2>
         </div>
         <section class="articles">
-            <?php foreach($articles as $article): ?>
+            <?php
+            require_once "data.php";
+             foreach($articles as $article): ?>
                 <div class="cards">
                     <img src="<?= htmlspecialchars($article["img"]); ?>" alt="article">
                     <h2><?= htmlspecialchars($article["title"]); ?></h2>
@@ -84,7 +86,7 @@
                     <p><?= htmlspecialchars($article["content"]); ?></p>
                     <span class="situation"><?= htmlspecialchars($article["situation"]); ?></span> 
                 </div>
-            <?php endforeach ?>
+            <?php endforeach; ?>
         </section>
     </main>
 

@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -5,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: beige;
-    padding: 15px;
+    padding: 5px;
     animation: move 1s alternate linear;
 }
 

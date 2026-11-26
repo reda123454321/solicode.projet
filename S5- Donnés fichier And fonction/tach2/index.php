@@ -14,18 +14,17 @@
         $selected_article=getarticles($articles, $id);
         if($selected_article!== null){
             ?>
-            <h2><?= $selected_article["title"]; ?></h2>
-            <p><?= $selected_article["text"] ?></p>
+            <h2><?= htmlspecialchars($selected_article["title"]); ?></h2>
+            <p><?= htmlspecialchars($selected_article["text"]); ?></p>
             <?php
-        }
-        
+        }  
      }
      else{
         foreach($articles as $article):
             ?>
-            <h2><?= $article["title"]; ?></h2>
-            <p><?= $article["text"] ?></p>
-            <a href="index.php?id=<?= $article["id"] ?>">More</a>
+            <h2><?= htmlspecialchars($article["title"]); ?></h2>
+            <p><?= htmlspecialchars($article["text"]); ?></p>
+            <a href="index.php?id=<?= htmlspecialchars($article["id"]); ?>">More</a>
      <?php
      endforeach;
      }
