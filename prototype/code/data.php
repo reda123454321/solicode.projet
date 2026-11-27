@@ -10,7 +10,7 @@ $articles=[
         "categorie" => "Sports",
         "categorie_id" => 1,
         "situation" => "Approved",
-        "img" => "prototype/football.jpeg",
+        "img" => "../images/football.jpeg",
     ],
 
     [
@@ -22,7 +22,7 @@ $articles=[
         "content" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, officia et consequatur ipsa aliquid excepturi quae dolorum illo voluptas nihil accusantium officiis modi sunt inventore blanditiis perferendis, itaque rerum alias.",
         "categorie_id" => 1,
         "situation" => "Pending",
-        "img" => "prototype/basketball.jpeg",
+        "img" => "../images/basketball.jpeg",
     ],
 
     [
@@ -34,7 +34,7 @@ $articles=[
         "categorie" => "Art",
         "categorie_id" => 2,
         "situation" => "In Progress",
-        "img" => "prototype/painting.jpeg",
+        "img" => "../images/painting.jpeg",
     ],
 
     [
@@ -46,7 +46,7 @@ $articles=[
         "categorie" => "Art",
         "categorie_id" => 2,
         "situation" => "Approved",
-        "img" => "prototype/graphic design2.jpeg",
+        "img" => "../images/graphic design2.jpeg",
     ],
 
     [
@@ -58,7 +58,7 @@ $articles=[
         "categorie" => "Computer Science",
         "categorie_id" => 3,
         "situation" => "Pending",
-        "img" => "prototype/php.jpeg",
+        "img" => "../images/php.jpeg",
     ],
 
     [
@@ -70,7 +70,7 @@ $articles=[
         "categorie" => "Computer Science",
         "categorie_id" => 3,
         "situation" => "Approved",
-        "img" => "prototype/ai.jpeg",
+        "img" => "../images/ai.jpeg",
     ],
 
     [
@@ -82,7 +82,7 @@ $articles=[
         "categorie" => "Gaming",
         "categorie_id" => 4,
         "situation" => "In Progress",
-        "img" => "prototype/gaming.jpeg",
+        "img" => "../images/gaming.jpeg",
     ],
 
     [
@@ -94,7 +94,7 @@ $articles=[
         "categorie" => "Gaming",
         "categorie_id" => 4,
         "situation" => "Rejected",
-        "img" => "prototype/gaming2.jpeg",
+        "img" => "../images/gaming2.jpeg",
     ],
 
     [
@@ -106,7 +106,7 @@ $articles=[
         "categorie" => "Sports",
         "categorie_id" => 1,
         "situation" => "Approved",
-        "img" => "prototype/physical sport.jpeg",
+        "img" => "../images/physical sport.jpeg",
     ],
 
     [
@@ -118,7 +118,7 @@ $articles=[
         "categorie" => "Art",
         "categorie_id" => 2,
         "situation" => "Pending",
-        "img" => "prototype/photographie.jpeg",
+        "img" => "../images/photographie.jpeg",
     ],
 
     [
@@ -130,7 +130,7 @@ $articles=[
         "categorie" => "Computer Science",
         "categorie_id" => 3,
         "situation" => "In Progress",
-        "img" => "prototype/cyber securrite.jpeg",
+        "img" => "../images/cyber securrite.jpeg",
     ],
 
     [
@@ -142,7 +142,7 @@ $articles=[
         "categorie" => "Gaming",
         "categorie_id" => 4,
         "situation" => "Approved",
-        "img" => "prototype/minecraft.jpeg",
+        "img" => "../images/minecraft.jpeg",
     ],
 ];
 

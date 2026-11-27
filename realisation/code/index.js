@@ -7,10 +7,7 @@ navigation.style.opacity = "0";
 
 button.addEventListener("click", function () {
 
-    if (
-        navigation.style.visibility === "hidden" &&
-        navigation.style.opacity === "0"
-    ) {
+    if (navigation.style.visibility === "hidden") {
 
         navigation.style.visibility = "visible";
         navigation.style.opacity = "1";
@@ -21,15 +18,30 @@ button.addEventListener("click", function () {
                 { transform: "translateX(0)" }
             ],
             {
-                duration: 400,
+                duration: 1000,
                 easing: "ease"
             }
         );
 
     } else {
 
-        navigation.style.visibility = "hidden";
-        navigation.style.opacity = "0";
+        let animation = navigation.animate(
+            [
+                { transform: "translateX(0)" },
+                { transform: "translateX(-100%)" }
+            ],
+            {
+                duration: 1000,
+                easing: "ease"
+            }
+        );
+
+        animation.onfinish = function () {
+
+            navigation.style.visibility = "hidden";
+            navigation.style.opacity = "0";
+
+        };
 
     }
 

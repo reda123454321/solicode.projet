@@ -1,8 +1,8 @@
+
 <?php
 
-require_once "function.php";
 require_once "data.php";
-
+require_once "function.php";
 
 if (isset($_GET["id"])) {
 
@@ -15,6 +15,7 @@ if (isset($_GET["id"])) {
     $products = getProducts($products);
 
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +29,14 @@ if (isset($_GET["id"])) {
 </head>
 
 <body>
-    <div class="search">
-        <button id="menu">☰</button>
-        <img src="../Réalisation/images/logo.png" alt="">
 
-        <input type="search" placeholder="search">
+    <div class="search">
+
+        <button id="menu">☰</button>
+
+        <img src="../images/logo.png" alt="PYRAMIX">
+
+        <input type="search" placeholder="Search">
 
         <nav class="nav">
             <a href="">Sign in</a>
@@ -42,31 +46,24 @@ if (isset($_GET["id"])) {
 
     </div>
 
-
     <header class="header">
 
-        <h1>PYRAMIX</h1>
-
-        <cite>BUILD YOUR OWN MARKETING CAREER</cite>
 
     </header>
 
-
     <main class="main">
 
-
         <?php if (isset($_GET["id"])) { ?>
-
 
             <?php if (isset($product)) { ?>
 
                 <section class="card">
 
                     <h3>
-                        <?= $product["category"] . " " . $product["name"] ?>
+                        <?= htmlspecialchars($product["category"] . " " . $product["name"]) ?>
                     </h3>
 
-                    <img src="<?= $product["image"] ?>" alt="">
+                    <img src="<?= htmlspecialchars($product["image"]) ?>" alt="">
 
                     <p>COLOR :</p>
 
@@ -93,7 +90,6 @@ if (isset($_GET["id"])) {
 
                 <a href="index.php">BACK TO PRODUCTS</a>
 
-
             <?php } else { ?>
 
                 <h2>PRODUCT NOT FOUND</h2>
@@ -102,19 +98,17 @@ if (isset($_GET["id"])) {
 
             <?php } ?>
 
-
         <?php } else { ?>
-
 
             <?php foreach ($products as $product) { ?>
 
                 <section class="card">
 
                     <h3>
-                        <?= $product["category"] . " " . $product["name"] ?>
+                        <?= htmlspecialchars($product["category"] . " " . $product["name"]) ?>
                     </h3>
 
-                    <img src="<?= $product["image"] ?>" alt="">
+                    <img src="<?= htmlspecialchars($product["image"]) ?>" alt="">
 
                     <p>COLOR :</p>
 
@@ -143,12 +137,9 @@ if (isset($_GET["id"])) {
 
             <?php } ?>
 
-
         <?php } ?>
 
-
     </main>
-
 
     <script src="index.js"></script>
 

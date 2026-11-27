@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,8 +48,21 @@ body {
     gap: 25px;
 }
 
-.nav a{
+.nav a {
     color: white;
+    text-decoration: none;
+}
+
+/* MENU BUTTON */
+
+#menu {
+    background-color: #d6b45b;
+    color: black;
+    border: 1px solid #d6b45b;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 /* HEADER */
@@ -53,8 +70,11 @@ body {
 .header {
     text-align: center;
     padding: 65px 20px;
-    background: linear-gradient(135deg, #111, #292929, #111);
-    border-bottom: 1px solid #b89545;
+    background-image: url("../images/Pyramix Gold Geometric Brand Hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
 }
 
 .header h1 {
@@ -233,10 +253,4 @@ body {
         max-width: 350px;
     }
 
-};
-
-.search button{
-    padding: 8px;
-    color: gold;
-    background: none;
 }
